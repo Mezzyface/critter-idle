@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://c1hocgas7dw5q"]
+
+[ext_resource type="FontFile" uid="uid://xfpnr4gvxhfg" path="res://assets/HoneyPigeon.ttf" id="1_24q3n"]
+
+[resource]
+default_font = ExtResource("1_24q3n")
+Button/fonts/font = ExtResource("1_24q3n")
