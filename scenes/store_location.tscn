@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4kmcigb1ikgh"]
+
+[ext_resource type="PackedScene" uid="uid://ds51li6as2ol2" path="res://scenes/base_location.tscn" id="1_4tgko"]
+[ext_resource type="Script" uid="uid://dsaf4taj4exts" path="res://scenes/store_location.gd" id="2_anftn"]
+
+[node name="StoreLocation" instance=ExtResource("1_4tgko")]
+script = ExtResource("2_anftn")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/MarginContainer/VBoxContainer/Content" index="0"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="RequestButton" type="Button" parent="Background/MarginContainer/VBoxContainer/Content/HBoxContainer" index="0"]
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 2
+text = "View Requests"
+
+[node name="EggButton" type="Button" parent="Background/MarginContainer/VBoxContainer/Content/HBoxContainer" index="1"]
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 2
+text = "Buy Eggs"
+
+[node name="UpgradesButton" type="Button" parent="Background/MarginContainer/VBoxContainer/Content/HBoxContainer" index="2"]
+custom_minimum_size = Vector2(150, 40)
+layout_mode = 2
+text = "Upgrades"

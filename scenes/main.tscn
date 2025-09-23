@@ -1,3 +1,28 @@
-[gd_scene format=3 uid="uid://bflvyb4ojtjur"]
+[gd_scene load_steps=2 format=3 uid="uid://bflvyb4ojtjur"]
+
+[ext_resource type="Script" uid="uid://cp4mvja14jj5a" path="res://scripts/game_controller.gd" id="1_o5qli"]
 
 [node name="main" type="Node2D"]
+script = ExtResource("1_o5qli")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GameUI" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/GameUI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LocationList" type="VBoxContainer" parent="CanvasLayer/GameUI/ScrollContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20

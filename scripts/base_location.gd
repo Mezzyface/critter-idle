@@ -1,0 +1,2 @@
+class_name BaseLocation
+extends Control
